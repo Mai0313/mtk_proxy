@@ -16,7 +16,10 @@ proxy-groups:
     type: select
     proxies:
       - "MTK Proxy"
-      - DIRECT
+  - name: "Discord Group"
+    type: select
+    proxies:
+      - "MTK Proxy"
 
 rules:
   - DOMAIN-SUFFIX,notion.so,Notion Group

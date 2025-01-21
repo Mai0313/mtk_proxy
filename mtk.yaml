@@ -11,24 +11,12 @@ proxies:
     server: mtkdrone01.mediatek.inc
     port: 23984
 
-proxy-groups:
-  - name: "Notion Group"
-    type: select
-    proxies:
-      - "MTK Proxy"
-      - DIRECT
-  - name: "Discord Group"
-    type: select
-    proxies:
-      - "MTK Proxy"
-      - DIRECT
-
 rules:
-  - DOMAIN-SUFFIX,notion.so,Notion Group
-  - DOMAIN-SUFFIX,notion-static.com,Notion Group
-  - DOMAIN-SUFFIX,notion.site,Notion Group
-  - DOMAIN-SUFFIX,notionapi.com,Notion Group
-  - DOMAIN-SUFFIX,notionusercontent.com,Notion Group
-  - DOMAIN-SUFFIX,api.notion.com,Notion Group
-  - DOMAIN-SUFFIX,discord.com,Discord Group
+  - DOMAIN-SUFFIX,notion.so,MTK Proxy
+  - DOMAIN-SUFFIX,notion-static.com,MTK Proxy
+  - DOMAIN-SUFFIX,notion.site,MTK Proxy
+  - DOMAIN-SUFFIX,notionapi.com,MTK Proxy
+  - DOMAIN-SUFFIX,notionusercontent.com,MTK Proxy
+  - DOMAIN-SUFFIX,api.notion.com,MTK Proxy
+  - DOMAIN-SUFFIX,discord.com,MTK Proxy
   - MATCH,DIRECT
